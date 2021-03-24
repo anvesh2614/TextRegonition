@@ -11,6 +11,9 @@ def Angle(image):
         return image
 
 
-    else:
+    elif int(angle)==90:
         image = cv2.rotate(image, cv2.cv2.ROTATE_90_CLOCKWISE)
         return image
+    else:
+        print("Still in progress")
+        exit(0)
